@@ -1,0 +1,11 @@
+Day-23
+-------
+
+CSS Selector
+
+CSS - Cascading Style Sheet
+3
+tag id               tag#id
+tag class			 tag.classname
+tag attribute		 tag[attribute="value"]
+tag class attribute  tag.classname[attribute="value"]

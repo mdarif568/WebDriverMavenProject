@@ -1,0 +1,96 @@
+Day - 24
+--------
+
+XPath
+-----
+
+XPath is an address of the element.
+
+DOM - Document Object Model
+
+2 types of xpath
+-----------------
+
+1) Absolute xpath(full xpath)
+
+	Ex: /html/body/header/div/div/div[2]/div/input
+
+2) Relative xpath(partial xpath)
+
+	Ex: //*[@id="search"]/input
+	
+	Which xpath will be preferred?
+	Relative xpath
+	
+	
+	Differences between Absolute xpath and Relative xpath
+	------------------------------------------------------
+	
+	1) Absolute xpath starts with /     --> Represent root node
+	   Relative xpath starts with //    
+	   
+	2) Absolute xpath do not use attributes
+	   Relative xpath works with attributes
+	   
+	3) Absolute xpath traverse through each node till it find element
+	   Relative xpath directly jump and find the element by using attribute
+	   
+	   
+	Relative xpath
+	--------------
+	1) Automatically - Devtools, Selectorhub
+	2) Manually(own xpath)
+	
+	syntax: 
+	------
+	
+	//tagname[@attribute='value']
+	//*[@attribute='value']
+			
+	//img[@title='MacBook']
+	
+	XPath with single attribute
+	---------------------------
+	driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("T-shirts");
+	
+	
+	XPath with multiple attribute
+	-----------------------------
+	//input[@name='search'][@placeholder='Search']
+	
+	xpath with 'and' 'or' operator
+	------------------------------
+	//input[@name='search' and @placeholder='Search']
+	//input[@name='search' or @placeholder='Search']
+	
+	
+	xpath with inner text - text()
+	------------------------------
+	//a[text()='Desktops']
+	//a[text()='MacBook']
+	
+	
+	<a href="https://xyz.com"> Click Me</a>
+	linktext = yes
+	inner text = yes
+	
+	<div> Welcome </div>
+	link text = no
+	inner text = yes
+	
+	
+	xpath with contains()
+	---------------------
+	//input[contains(@placeholder,'Sea')]
+	
+	
+	xpath with start-with()
+	-----------------------
+	//input[start-with(@placeholder,'Sea')]
+	
+	
+			
+
+
+
+

@@ -1,0 +1,38 @@
+# Maven target folder
+/target/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+.metadata/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# VS Code files
+.vscode/
+
+# Java compiled files
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test output / reports
+test-output/
+surefire-reports/
+reports/
+
+# Selenium screenshots or downloads
+screenshots/
+downloads/
