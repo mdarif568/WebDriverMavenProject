@@ -43,6 +43,12 @@ public class XPathDemo {
 		// xpath with start-with()
 		driver.findElement(By.xpath("//input[start-with(@placeholder,'Sea')]")).sendKeys("T-shirts");
 		
+		// chained xpath
+		boolean status = driver.findElement(By.xpath("//div[@id='logo']/a/img")).isDisplayed();
+		System.out.println(status);
+		
+		
+		
 		
 		
 		

@@ -89,6 +89,102 @@ DOM - Document Object Model
 	//input[start-with(@placeholder,'Sea')]
 	
 	
+	Handling dynamic attributes
+	---------------------------
+	//*[@id='start' or @id='stop']
+	//*[contains(@id,'st')]
+	//*[starts-with(@id, 'st')]
+	
+	if name=xyz001  xyz002  xyz003   xyz004
+	//*[contains(@name, 'xyz')]
+	//*[contains(@name, '00']
+	//*[starts-with(@name, 'xyz']
+	
+	
+	if name=001xyz  002xyz   003xyz   001xyz
+	//*[contains(@name, 'xyz')]
+	//*[starts-with(@name, '00')]
+	
+	if name=101xyz  201xyz  301xyz  401xyz
+	//*[contains(@name, 'xyz')]
+	
+	
+	chained xpath
+	-------------
+	//div[@id='logo']/a/img
+	
+	
+	Locating Parent Element
+	-----------------------
+	<form...
+		<div
+		<div
+			<input id="txtUsername"
+			<span
+		</div
+		
+		self node input
+		//input[@id='txtUsername']/parent::form
+		//input[@id='txtUsername']/parent::*
+		//input[@id='txtUsername']/..
+		
+	Locating a child element
+	------------------------
+	<div id="divUsername"
+			<input id="txtUsername"
+			<span
+	</div
+	
+	//div[@id='divUsername']/child::input
+	//div[@id='divUsername']/input
+	
+	
+	Locating ancestors of a known element
+	-------------------------------------
+	<form...
+		<div
+		<div
+			<input id="txtUsername"
+			<span
+		</div
+		
+		self node input
+		
+		//input[@id='txtUsername']/ancestor::form
+		//input[@id='txtUsername']/ancestor::*
+		
+	Locating descendant of a known element
+	--------------------------------------
+	 <form id="frmLogin"
+		<div
+		<div
+			<input id="txtUsername"
+			<span
+		</div
+		
+		self node form
+		//form[@id='frmLogin']/descendant::input
+		//form[@id='frmLogin']/descendant::span
+		
+		//form[@id='frmLogin']//input
+		
+		
+		<div
+			<div
+				<div
+				<div
+				<div
+				
+		div/div/div[3]
+	
+	
+	
+	
+	
+	
+	
+	
+	
 			
 
 
