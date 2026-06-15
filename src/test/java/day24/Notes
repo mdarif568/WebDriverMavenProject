@@ -176,6 +176,13 @@ DOM - Document Object Model
 				<div
 				
 		div/div/div[3]
+		
+		Push commands
+		-------------
+		git status
+		git add .
+		git commit -m "Your commit message"
+		git push origin master
 	
 	
 	
