@@ -169,13 +169,83 @@ DOM - Document Object Model
 		//form[@id='frmLogin']//input
 		
 		
+		
+		<form id="frmLogin"
 		<div
-			<div
-				<div
-				<div
-				<div
-				
-		div/div/div[3]
+		<div
+			<input id="txtUsername"
+			<span
+		</div
+	
+	Locating following siblings
+	---------------------------	
+		
+<form id="frmLogin" method="post" action="./index.php/auth/validateCredentials">
+    <input type="hidden" name="actionID">
+    <input type="hidden" name="hdnUserTimeZoneOffset"
+           id="hdnUserTimeZoneOffset"
+           value="5.5">
+    <input type="hidden"
+           name="_csrf_token"
+           value="71389df12f99d00431a4c83a83fc2349"
+           id="csrf_token">
+    <div id="logInPanelHeading">
+        LOGIN Panel
+    </div>
+    <div id="divUsername" class="textInputContainer">
+        <input name="txtUsername" id="txtUsername" type="text">
+        <span class="form-hint" style="display: none;">
+            Username
+        </span>
+    </div>
+    <div id="divPassword" class="textInputContainer">
+        <input name="txtPassword" id="txtPassword" type="password">
+        <span class="form-hint" style="display: none;">
+            Password
+        </span>
+    </div>
+    <div id="divLoginHelpLink"></div>
+    <div id="divLoginButton">
+        <input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+    </div>
+
+</form>
+	
+	//<xpathOfContextElement>/following::<elementName> or
+	//<xpathOfContextElement>/following::*
+	
+	//input[@id='txtUsername']/following::input[last()]
+	//input[@id='txtUsername']/following::input[2]
+	
+	
+	Locating preceding siblings
+	---------------------------
+	
+	<div id="divUsername" class="textInputContainer">
+        <input name="txtUsername" id="txtUsername" type="text">        -- target node
+        <span class="form-hint" style="display: none;">User Name</span>
+    </div>
+    <div id="divPassword" class="textInputContainer">
+        <input name="txtPassword" id="txtPassword" type="password">
+        <span class="form-hint" style="display: none;">Password</span> -- self node
+	
+	syntax: <xpathOfContextElement>/preceding::<Element Name>  or
+			<xpathOfContextElement>/preceding::*
+			
+			//span[text()='Password']/preceding::input
+			//span[text()='Password']/preceding::input[2]  if target node is 2nd input above self node
+			
+	Locating following-sibling
+	--------------------------
+	
+	
+	
+		
+		
+		
+		
+		
+		
 		
 		Push commands
 		-------------
