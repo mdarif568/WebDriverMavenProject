@@ -237,7 +237,27 @@ DOM - Document Object Model
 			
 	Locating following-sibling
 	--------------------------
-	
+		<div id="divUsername" class="textInputContainer">
+	        <input name="txtUsername" id="txtUsername" type="text">          --  self node
+	        <span class="form-hint" style="display: none;">UserName</span>  --  target element
+    	</div>
+    	
+    	//span[text()='UserName']/following-sibling::span
+    	//span[text()='UserName']/following-sibling::*
+    	
+    Locating preceding-sibling
+    --------------------------
+    
+    	<div id="divUsername" class="textInputContainer">
+	        <input name="txtUsername" id="txtUsername" type="text">          --  target element
+	        <span class="form-hint" style="display: none;">UserName</span>   --  self node
+    	</div>
+    	
+    	
+    	//span[contains(text(),'UserName')]/preceding-sibling::input
+    	//span[contains(text(),'UserName')]/preceding-sibling::*
+    	
+    	
 	
 	
 		
