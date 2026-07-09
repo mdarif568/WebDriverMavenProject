@@ -46,6 +46,12 @@ public class XPathDemo {
 		
 		
 		
+		// chained xpath
+		boolean status = driver.findElement(By.xpath("//div[@id='logo']/a/img")).isDisplayed();
+		System.out.println(status);
+		
+		
+		
 		
 		
 		

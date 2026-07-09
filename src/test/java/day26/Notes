@@ -1,5 +1,5 @@
-	Day 26
-	---------
+	Day-26
+	--------
 	
 	1) get methods
 	2) conditional methods
@@ -7,14 +7,15 @@
 	4) navigational methods
 	5) wait methods
 	
-	
+
 	get methods - we can access these methods through webdriver instance
-	------------
+	---------------------------------------------------------------
 	
 	get(url) - opens the url on the browser
 	getTitle() - returns title of the page
 	getCurrentUrl() - returns URL of the page
 	getPageSource() - returns source code of the page
+
 	getWindowHandle() - returns ID of the single Browser window
 	getWindowHandles() - returns ID's of the multiple browser windows
 	
@@ -33,6 +34,7 @@
 	
 	close() - close single browser
 	quit() - close multiple browser
+
 	
 	
 	
@@ -40,3 +42,4 @@
 	
 	
 	
+

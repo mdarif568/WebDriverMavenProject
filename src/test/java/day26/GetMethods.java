@@ -30,7 +30,9 @@ public class GetMethods {
 		
 		
 		//getWindowHandles() - returns IDs of the multiple browser windows
+
 		driver.findElement(By.linkText("OrangeHRM, Inc")).click(); // this will open new browser window
+
 		Set<String> windowids = driver.getWindowHandles();
 		System.out.println(windowids);//[AF1620516DE852EF598D10D0A62095FB, B2E7DAE5A08BB68E130C09F02E31CF3A]
 		for(String x:windowids) 
@@ -46,4 +48,6 @@ public class GetMethods {
 
 	}
 
+
 }
+
