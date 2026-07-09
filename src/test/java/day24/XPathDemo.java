@@ -40,8 +40,11 @@ public class XPathDemo {
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Sea')]")).sendKeys("T-shirts");
 		
 		
-		// xpath with start-with()
-		driver.findElement(By.xpath("//input[start-with(@placeholder,'Sea')]")).sendKeys("T-shirts");
+		// xpath with starts-with()
+		driver.findElement(By.xpath("//input[starts-with(@placeholder,'Sea')]")).sendKeys("T-shirts");
+		
+		
+		
 		
 		
 		

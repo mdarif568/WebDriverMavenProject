@@ -84,9 +84,11 @@ DOM - Document Object Model
 	//input[contains(@placeholder,'Sea')]
 	
 	
-	xpath with start-with()
+	xpath with starts-with()
 	-----------------------
-	//input[start-with(@placeholder,'Sea')]
+	//input[starts-with(@placeholder,'Sea')]
+	
+	
 	
 	
 			

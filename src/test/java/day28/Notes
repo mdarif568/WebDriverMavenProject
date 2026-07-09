@@ -1,0 +1,14 @@
+Day - 28
+--------
+	
+	Navigational Commands
+	---------------------
+	
+	navigate().to(url)
+	navigate().back()
+	navigate().forward()
+	navigate().refresh()
+	
+	driver.get() --> accepts URL in string format only
+	driver.navigate().to() --> accepts URL in string format and URL object format	
+	

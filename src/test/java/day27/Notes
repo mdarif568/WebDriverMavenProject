@@ -1,0 +1,112 @@
+
+Day 27
+------
+	
+	wait commands
+	-------------
+	
+	synchronization
+	
+	Thread.sleep() - it is a java method not selenium commands
+	
+	1) implicit wait
+	2) explicit wait/fluent wait
+	
+	
+	NoSuchElementException - Element is not present on the page. synchronization
+	ElementNotFoundException - Locator is not correct
+	
+	sleep()
+	-------
+	
+	Advantage
+	----------
+	1) easy to use
+	
+	
+	Dis Advantages
+	--------------
+	1) If the time is not sufficient then we will get exception
+	2) It will wait maximum timeout. this will reduce the script performance. 
+	3) multiple times
+	
+	
+	implicit wait
+	-------------
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	
+	Adv.
+	------
+	1) single time use/one statement
+	2) it will not wait maximum time if the element appear
+	3) applicable for all the elements
+	4) easy to use
+	
+	Dis Adv.
+	-----------
+	1) if the time is not sufficient then we will get exception.
+	
+	
+	Explicit wait
+	---------------
+	declaration
+	use
+	
+	1) Conditional based, it will work more effectively
+	2) finding element is inclusive (for some conditions)
+	3) it will wait condition to be true, then consider the time
+	4) we need to write multiple statements for multiple elements
+	
+	
+	
+	alertIsPresent()
+	elementSelectionStateToBe()
+	elementToBeClickable()
+	elementToBeSelected()
+	frameToBeAvailableAndSwitchToIt()
+	presenceOfAllElementsLocatedBy()
+	presenceOfElementLocated()
+	textToBePresentInElement()
+	textToBePresentInElementLocated()
+	textToBePresentInElementValue()
+	titleIs()
+	titleContains()
+	visibilityOf()
+	visibilityOfAllElements()
+	visibilityOfAllElementsLocatedBy()
+	visibilityOfElementLocated()
+	
+	Fluent wait
+	-----------
+	
+	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+      .withTimeout(Duration.ofSeconds(30L))
+      .pollingEvery(Duration.ofSeconds(5L))
+      .ignoring(NoSuchElementException.class);
+
+  	WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
+    public WebElement apply(WebDriver driver) {
+      return driver.findElement(By.id("foo"));
+    }
+  });
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
