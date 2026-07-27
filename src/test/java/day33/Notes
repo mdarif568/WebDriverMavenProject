@@ -1,0 +1,13 @@
+
+Day - 33
+--------
+
+	Dynamic table with pagination
+	-----------------------------
+	
+	String s= "Showing 11 to 20 of 35032 (3504 Pages)";
+	
+	s.indexOf("(")+1
+	s.indexOf("Pages")-1
+	
+	s.subString(s.indexOf("(")+1, s.indexOf("Pages")-1);  --> 3504

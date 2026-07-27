@@ -1,0 +1,27 @@
+	
+	Day - 40
+	--------
+	
+	Excel File ----> Workbook ----> Sheets ----> Rows ----> Cells
+	
+	FileInputStream ----> reading
+	FileOutputStream ---> writing
+	
+	
+	XSSFWoorkBook ---> Workbook
+	XSSFSheets ------> Sheets
+	XSSFRows --------> Rows
+	XSSFCells -------> Cells
+	
+	
+	
+
+
+
+
+
+
+
+
+
+

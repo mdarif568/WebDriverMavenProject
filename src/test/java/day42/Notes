@@ -1,0 +1,109 @@
+
+Day - 42
+--------
+
+	TestNG - Test New Generation
+	Java based unit testing tool.
+	
+	Advantages:
+	-----------
+	
+	1) Test cases and test suits
+	2) Grouping of test cases
+	3) Prioritize
+	4) Parameterized
+	5) Parallel testing 
+	6) Reports
+	
+	
+	TestNG Configuration
+	--------------------
+	
+	1) Install TestNG in eclipse from marketplace (Mandatory)
+	2) Add testng library to build path/ add testng dependency in pom.xml
+	
+	
+	@Test - annotation
+	
+	1) TestNG execute test methods based on alphabetical order.
+	2) @Test(priority=num) controls the order of execution.
+	3) Once you provide the priority to the methods, the order of the method is not consider. 
+	4) Priority can be random numbers (no need to have consecutive numbers)
+	5) If you don't provide priority then default value is zero (0). This will execute before prioritized methods
+	6) If the priority are same then it will execute in alphabetical order.
+	7) Negative numbers are also allowed in priority.
+	8) TestNG execute methods only if they are having @Test Annotation.
+	
+	
+	execute testcase using testng xml file
+	
+	testng xml file
+	---------------
+	
+	1) It created automatically
+	2) It can be created manually
+	
+	 
+	
+	Annotations
+	
+	@Test
+	
+	@BeforeMethod
+	@AfterMethod
+	
+	@BeforeClass
+	@AfterClass
+	
+	@BeforeTest
+	@AfterTest
+	
+	@BeforeSuite
+	@AfterSuite
+	
+	
+	TC1
+	----
+	
+	1) Login  ------- @BeforeMethod
+	2) Search ------- @Test
+	3) Logout ------- @AfterMethod
+	4) Login
+	5) Adv Search --- @Test
+	6) Logout
+	
+	
+	TC2
+	----
+	1) Login  ------ @BeforeTest
+	2) Search ------ @Test
+	3) Adv Search -- @Test
+	4) Logout ------ @AfterTest
+	
+	
+	xml
+	---
+	
+	<suite name="mysuite">
+		<test name="mytest1">
+			<classes>
+				<class name="xyz"/>
+			</classes>
+		</test>
+		
+		<test name="mytest2">
+			<classes>
+				<class name="abc"/>
+			</classes>
+		</test>
+	</suite>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

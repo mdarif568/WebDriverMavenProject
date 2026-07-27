@@ -1,0 +1,49 @@
+
+	Day - 35
+	--------
+	
+	Mouse Actions
+	-------------
+	
+	mouse hover - moveToElement(element)
+	right click - contexClick(element)
+	double click - doubleClick(element)
+	drag and drop - dragAndDrop(source, target)
+	
+	
+	Actions - pre defined class provided in the selenium
+	
+	build() - create an action
+	perform() - complete an action
+	
+	
+	getText() vs getAttribute(attribute)
+	------------------------------------
+	
+	<input id="xyz">welcome</input>
+	
+	getText() --> returns the inner text -->welcome
+	getAttribute("id") --> returns the value of the attribute --> xyz
+	
+	<input value="welcome"></input>
+	getAttribute("value") --> welcome
+	
+	
+	Actions vs Action
+	-----------------
+	Actions -- Class, will be use to perform mouse action
+	Action -- Interface, will be use to store created actions.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

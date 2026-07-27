@@ -1,0 +1,49 @@
+
+frames/iframes
+--------------
+
+driver.switchTo().frame(name)
+driver.switchTo().frame(id)
+driver.switchTo().frame(WebElement)
+driver.switchTo().frame(index)
+
+driver.switchTo().defaultContent();
+
+
+	3 types of switching methods
+	----------------------------
+	
+	1) browser windows
+		driver.switchTo().window(windowID/window handle)
+	
+	2) alerts
+		driver.switchTo().alert();
+		driver.switchTo().accept();
+		driver.switchTo().dismiss();
+		
+	3) frames
+		driver.switchTo().frame(id);
+		driver.switchTo().frame(name);
+		driver.switchTo().frame(index);
+		driver.switchTo().frame(WebElement);
+		
+		
+	Assignment
+	-----------
+
+		https://ui.vision/demo/webtest/frames/
+		
+		1) switch to 5th frame
+		2) click on link - opens new iframe
+		3) switch to inner frame
+		4) check logo presence in the inner frame.
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		

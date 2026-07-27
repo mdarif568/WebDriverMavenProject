@@ -1,0 +1,27 @@
+	Day-31
+	--------
+	
+	Dropdown box
+	------------
+	
+	1) select dropdown
+	2) Bootstrap dropdown
+	3) hidden drop down
+	
+	
+	select dropdown
+	----------------
+	
+	Select
+	
+	
+	selectByVisibleText()
+	selectByValue()
+	selectByIndex()
+	
+	
+	<Select id="country">
+	    <option value="in">India</option>
+	
+	
+	getOptions() ---- returns all the options from the dropdown as a WebElement.

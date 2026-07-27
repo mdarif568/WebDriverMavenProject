@@ -1,0 +1,25 @@
+
+	Day - 37
+	--------
+	
+	JavascriptExecutor
+	------------------
+	
+	executeScript(); -  we can execute javascript statements.
+	
+	sendKeys()
+	click()
+	
+	
+	Scrolling bar
+	-------------
+	1) Scroll to certain pixel
+	2) Scroll to an element
+	3) Scroll to the end of the page
+	
+	ZoomInZoomOut
+	-------------
+	Adjust the zoom level of the window
+	
+	
+	

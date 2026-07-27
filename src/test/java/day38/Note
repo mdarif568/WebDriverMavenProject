@@ -1,0 +1,64 @@
+
+Day - 38
+---------
+	How to take screenshot?
+	---
+	1) full page 
+	2) specific area of the webpage
+	3) web element
+	
+	
+	
+	ChromeOptions
+	EdgeOptions
+	FirefoxOptions
+	etc....
+	
+	
+	1) Headless Testing 
+	
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless=new");
+		
+		
+	advantages
+	----------
+	1) we can do multiple tasks( since execution happens in backend)
+	2) faster execution
+	
+	disadvantages
+	-------------
+	1) user cannot see the actions on the page. so he cannot understand flow/functionality of test.
+	
+	
+	SSL Handling
+	------------
+	
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless=new");
+			
+			WebDriver driver = new ChromeDriver(options);
+			
+	To disable "Chrome is being controlled by automated test software"
+	--------------------------------------------
+	
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
+		
+	
+	To run tests in incognito mode 
+	------------------------------
+	
+	ChromeOptions 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

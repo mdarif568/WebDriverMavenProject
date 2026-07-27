@@ -1,0 +1,25 @@
+
+	Slider
+	-------
+	
+	dragAndDropBy(Element, x, y);
+	
+	
+	Keyboard actions  -- Actions
+	
+	keyDown()
+	keyUp()
+	
+	Ex: control+shift+A
+	act.keyDown(Keys.CONTROL).keyDown(Keys.SHIFT).sendKeys("A").keyUp(Keys.SHIFT).KeyUp(Keys.CONTROL).perform();
+	
+	Ex: Enter
+	act.keyDown(Keys.ENTER).keyUp(Keys.ENTER).perform();
+	
+	
+	
+	
+	
+	
+	
+	
