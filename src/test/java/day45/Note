@@ -1,0 +1,26 @@
+
+	Day - 45
+	--------
+	
+	Parameterization
+	----------------
+	1) @DataProvider
+	2) using xml file we can pass parameters to the test method -- parallel testing
+	
+	
+	parallel testing using xml file
+	-------------------------------
+	
+	Step1) created test case 
+	Step2) created xml file to run the test case
+	Step3) passed browser name from xml file and received in setup() method
+	Step4) execute test cases on chrome, edge, and firefox browsers (serial execution)
+	Step5) execute test cases on chrome, edge, and firefox browsers (parallel execution)
+	
+	parallel="tests" in suite level runs tests parallel
+	parallel="classes" put multiple classes in a test and can run parallel
+	
+	
+
+
+

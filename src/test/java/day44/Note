@@ -1,0 +1,73 @@
+
+	Day - 44
+	--------
+	
+	dependency methods
+	
+	
+	openapp
+	login
+	search
+	advsearch
+	logout
+	
+	
+	dependsOnMethods= {"method1", "method2", ...}
+	
+	dependsOnMethods will apply only on @Test annotation
+	
+	
+	grouping
+	--------
+	
+	class1 - m1, m2, m3...
+	class2 - m4, m5, m6...
+	class3 - m7, m8, m9...
+	
+	
+	sanity
+	regression
+	functional
+	
+	
+	
+	loginByEmail - sanity
+	loginByFacebook - sanity
+	loginByTwitter - sanity
+	
+	signupByEmail - regression
+	signupByFacebook - regression
+	signupByTwitter - regression
+	
+	paymentinRupees - sanity, regression (functional)
+	paymentinDollar - sanity, regression (functional)
+	
+	Run
+	1) all sanity tests
+	2) all regression tests
+	3) all sanity but not regression
+	4) all regression but not sanity
+	5) all methods which belongs to both sanity and regression
+	
+	
+	@Test
+	-----
+	priority
+	dependsOnMethods
+	groups
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

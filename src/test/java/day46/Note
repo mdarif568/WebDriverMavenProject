@@ -1,0 +1,35 @@
+
+	Day - 46
+	--------
+	
+	TestNG Listener
+	---------------
+	
+	1) create test case
+	2) create listener class
+	3) create xml file and include both test case and listener class
+	
+	2 ways to implement listener class
+	----------------------------------
+	
+	Method1
+	-------
+	class myListener implements ITestListener
+	{
+	
+	}
+	
+	Method2
+	-------
+	class myListener extends TestListenerAdapter
+	{
+	
+	}
+	
+		
+
+
+
+
+
+

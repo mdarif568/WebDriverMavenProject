@@ -1,0 +1,18 @@
+
+	Day - 47
+	--------
+	
+	Page Object Model
+	-----------------
+	
+	Test case
+	---------
+	1) Locators
+	2) Test Methods -- code -- Validations + Actions
+	
+	2 approaches to create page object classes
+	-----------------------------
+	1) without using PageFactory
+	2) using PageFactory
+	
+	
